@@ -1,0 +1,25 @@
+{
+    "tamanos" : [ 
+        "grande",
+        "mediana",
+        "pequeña"
+    ],
+    "ingredientes" : [
+        "aceitunas",
+        "bacon",
+        "anchoas",
+        "queso"
+    ],
+    "precioPizza" : [
+        10,
+        15,
+        20
+    ],
+    "precioIngredientes" : [
+        {"aceitunas" : 1},
+        {"bacon" : 2},
+        {"anchoas" : 2},
+        {"queso" : 1}
+    ]
+    
+}
