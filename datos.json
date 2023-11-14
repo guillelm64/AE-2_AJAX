@@ -11,9 +11,9 @@
         "queso"
     ],
     "precioPizza" : [
-        10,
+        20,
         15,
-        20
+        10
     ],
     "precioIngredientes" : [
         {"aceitunas" : 1},

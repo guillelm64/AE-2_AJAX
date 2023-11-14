@@ -42,7 +42,7 @@
     </style>
     <script>
 
-        let URL_DESTINO = 'http://127.0.0.7:5500/AE-2_AJAX/formulario.html/';  
+        let URL_DESTINO = 'http://127.0.0.7:5500/AE-2_AJAX/';  
         let recurso = 'datos.json';
         let datos;
         /* Funcion para crear el objeto XMLHttpRequest, configurar el evento onreadystatechange que verifica 
@@ -131,10 +131,12 @@
 
             // Calculamos el precio total sumando tamaños e ingredientes
             let precioTamanos = datos.precioPizza[datos.tamanos.indexOf(tamano)];
+           
             let precioIngredientes = ingredientes.reduce(function(total, ingrediente) {
-            return total + datos.precioIngredientes[ingrediente];
-            }, 0);
-
+                let ingredienteObj = datos.precioIngredientes.find(obj => obj.hasOwnProperty(ingrediente));
+                return total + (ingredienteObj ? ingredienteObj[ingrediente] : 0);
+                }, 0);
+            
             let precioTotal = precioTamanos + precioIngredientes;
 
             alert("Precio Total del Pedido: " + precioTotal + "€");
