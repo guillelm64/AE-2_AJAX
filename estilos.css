@@ -1,0 +1,34 @@
+ /* CSS para editar la visualización de las etiquetas
+            */
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgba(109, 125, 75, 0.252);
+    margin: 0;
+}
+h1 {
+    font-style: oblique;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 3cm;
+}
+
+#pedido {
+    text-align: center;
+    margin-top: 3cm;
+}
+input{
+    margin-bottom: 15px;
+}
+button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+display: inline;
+}
